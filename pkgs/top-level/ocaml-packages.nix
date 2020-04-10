@@ -587,6 +587,8 @@ let
 
     ocaml_gettext = callPackage ../development/ocaml-modules/ocaml-gettext { };
 
+    gettext-stub = callPackage ../development/ocaml-modules/ocaml-gettext/stub.nix { };
+
     ocamlgraph = callPackage ../development/ocaml-modules/ocamlgraph { };
 
     ocaml_http = callPackage ../development/ocaml-modules/http { };
@@ -1234,5 +1236,5 @@ in let inherit (pkgs) callPackage; in rec
 
   ocamlPackages_latest = ocamlPackages_4_10;
 
-  ocamlPackages = ocamlPackages_4_08;
+  ocamlPackages = ocamlPackages_4_09;
 }
